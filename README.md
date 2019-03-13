@@ -7,22 +7,52 @@
 ## Install
 
 ```bash
-npm install --save lensalot
+npm install --save lensalot #or
+yarn add lensalot
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react';
+import { LensProvider, useLens } from 'lensalot';
 
-import MyComponent from 'lensalot'
+const state = {
+  logic: {
+    foo: false,
+    count: 0,
+  },
+};
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
+const Count = () => {
+  const [count] = useLens('logic.count');
+  return <p>{count}</p>;
+};
+
+const Increment = () => {
+  const [count, setCount] = useLens('logic.count');
+  return <button onClick={() => setCount(count + 1)}>+</button>;
+};
+
+const Toggle = () => {
+  const [foo, setFoo] = useLens('logic.foo');
+  return <button onClick={() => setFoo(!foo)}>{foo ? 'foo' : 'bar'}</button>;
+};
+
+const Logic = () => {
+  const [logic] = useLens('logic');
+  return <p>{JSON.stringify(logic)}</p>;
+};
+
+function Root() {
+  return (
+    <LensProvider state={state}>
+      <Count />
+      <Increment />
+      <Toggle />
+      <Logic />
+    </LensProvider>
+  );
 }
 ```
 
