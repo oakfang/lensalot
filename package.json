@@ -46,7 +46,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
-    "immer": "^2.1.2",
+    "immer": "^8.0.1",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2"
   },
@@ -55,7 +55,7 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "immer": "^2.1.2",
+    "immer": "^8.0.1",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2"
   }
