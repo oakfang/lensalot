@@ -5598,10 +5598,10 @@ immer@1.10.0:
   resolved "https://registry.yarnpkg.com/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immer@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-2.1.2.tgz#c307cda2a899a2ab235c990c2d2290755aa87e6c"
-  integrity sha512-4vHC3QtwjIkEDczY3CsBoMhLl4VvmjwPSIWVWHQPAJlk8U6zCwH2ovf+0z0TTh14bFg9yE++4TcSeIf3tumPQQ==
+immer@^9.0.6:
+  version "9.0.6"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
+  integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
 
 import-cwd@^2.0.0, import-cwd@^2.1.0:
   version "2.1.0"
